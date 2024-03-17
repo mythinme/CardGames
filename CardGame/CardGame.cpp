@@ -7,7 +7,6 @@ int main()
 {
     CardDeck cd;
     cd.ShuffleCards();
-    //cd.PrintAllCard();
     Dealer d;
     std::vector<Card> cards = cd.Deal();
     std::vector<std::string> players = {"A", "B", "C", "D", "E"};
