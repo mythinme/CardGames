@@ -7,9 +7,9 @@
 CardDeck::CardDeck() :mDeck()
 {
     mDeck.reserve(52);
-    Card::Rank inputRank = Card::TWO;
+    Card::Rank inputRank = Card::ACE;
 
-    while (inputRank <= Card::ACE)
+    while (inputRank <= Card::KING)
     {
 
         Card::Suit inputSuit = Card::HEART;

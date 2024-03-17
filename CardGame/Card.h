@@ -4,7 +4,7 @@ class Card
 {
 public:
 
-    enum Rank { TWO = 2, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE };
+    enum Rank { ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING };
     enum Suit { HEART = 1, DIAMOND, CLUB, SPADE };
 private:
 

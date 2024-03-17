@@ -9,7 +9,21 @@ int main()
     cd.ShuffleCards();
     Dealer d;
     std::vector<Card> cards = cd.Deal();
-    std::vector<std::string> players = {"A", "B", "C", "D", "E"};
+    int num = 0,i =0;
+
+    while (num < 2) {
+        std::cout << "Please enter ujmber of players : ";
+        std::cin >> num;
+        if (num < 2)
+            std::cout << " Insufficient players" << std::endl;
+    }
+    std::string name = "";
+    std::vector<std::string> players;
+    while (i < num) {
+        std::cout << "Please enter name for player "<< 1+(i++)<<" : ";
+        std::cin >> name;
+        players.push_back(name);
+    }
     d.createPlayers(players, cards);
 
 }
